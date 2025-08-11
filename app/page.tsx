@@ -1,13 +1,10 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { useState } from "react";
 import Socials from "@/components/Socials"
 import {FiDownload} from "react-icons/fi";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 export default function Home() {
-  const [show, setShow] = useState(true);
 
   return (
     <section className="h-full">
