@@ -116,28 +116,29 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { delay, motion } from 'framer-motion';
 export default function Page() {
-  return <motion.div initial={{ opacity: 0 }}
+  return <motion.div
+    initial={{ opacity: 0 }}
     animate={{
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.2, ease: "easeIn" }
+      transition: { duration: 0.4, delay: 2.4, ease: "easeIn" }
     }}
     className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'>
-      <div className="container mx-auto mb-5">
-        <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-          <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6'>
-            <TabsTrigger value="experience" className="text-lg font-semibold">Experience</TabsTrigger>
-            <TabsTrigger value="education" className="text-lg font-semibold">Education</TabsTrigger>
-            <TabsTrigger value="skills" className="text-lg font-semibold">Skills</TabsTrigger>
-            <TabsTrigger value="about" className="text-lg font-semibold">About Me</TabsTrigger>
-          </TabsList>
+    <div className="container mx-auto mb-5">
+      <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
+        <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6'>
+          <TabsTrigger value="experience" className="text-lg font-semibold">Experience</TabsTrigger>
+          <TabsTrigger value="education" className="text-lg font-semibold">Education</TabsTrigger>
+          <TabsTrigger value="skills" className="text-lg font-semibold">Skills</TabsTrigger>
+          <TabsTrigger value="about" className="text-lg font-semibold">About Me</TabsTrigger>
+        </TabsList>
         <div className='min-h-[70vh] w-full '>
-            {/* Experience content */}
-            <TabsContent value='experience' className='w-full '>
-             <div>
+          {/* Experience content */}
+          <TabsContent value='experience' className='w-full '>
+            <div>
               <div className="flex items-center gap-4 mb-6">
                 <img src={experience.icon} alt="Experience Icon" className="w-8 h-8" />
                 <h2 className="text-2xl font-bold ">{experience.title}</h2>
-              </div> 
+              </div>
               <p className="text-lg mb-4">{experience.description}</p>
               <ScrollArea className="h-[400px]">
                 <div className="space-y-6">
@@ -154,68 +155,68 @@ export default function Page() {
                   ))}
                 </div>
               </ScrollArea>
-             </div>
-            </TabsContent>
-            {/* Education content */}
-            <TabsContent value='education' className='w-full'>
-               <div>
-                  <div className="flex items-center gap-4 mb-6">
-                    <img src={education.icon} alt="Education Icon" className="w-8 h-8" />
-                    <h2 className="text-2xl font-bold">{education.title}</h2>
-                  </div>  
-                  <p className="text-lg mb-4">{education.Description}</p>
-                  <ScrollArea className="h-[400px]">
-                    <div className="space-y-6">
-                      {education.items.map((item, index) => (
-                        <div key={index} className="border p-4 rounded-lg">
-                          <h3 className="text-xl font-semibold">{item.institution}</h3>
-                          <p className="text-sm text-gray-500">{item.degree} - {item.duration}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </ScrollArea>
-                </div>  
-            </TabsContent>
-            {/* Skills content */}
-
-            <TabsContent value='skills' className='w-full'>
-              <div>
-                <h2 className="text-2xl font-bold mb-4">{skills.title}</h2>
-                <p className="text-lg mb-6">{skills.description}</p>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {skills.sillList.map((skill, index) => (
-                    <TooltipProvider key={index}>
-                      <Tooltip>
-                        <TooltipTrigger className="flex flex-col items-center">
-                          <span className="text-3xl mb-2">{skill.icon}</span>
-                          <span className="text-sm">{skill.name}</span>
-                        </TooltipTrigger>
-                        <TooltipContent>{skill.name}</TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  ))}
-                </div>
-              </div> 
-            </TabsContent>
-
-            {/* About Me content */}
-            <TabsContent value='about' className='w-full'>
-              <div>
-                <h2 className="text-2xl font-bold mb-4">{about.title}</h2>
-                <p className="text-lg mb-6">{about.description}</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {about.info.map((info, index) => (
-                    <div key={index} className="border p-4 rounded-lg">
-                      <span className="font-semibold">{info.fieldName}:</span> {info.fieldValue}
-                    </div>
-                  ))}
-                </div>
-              </div>
+            </div>
           </TabsContent>
-          </div>
-        </Tabs>
-      </div>
-  
-    
+          {/* Education content */}
+          <TabsContent value='education' className='w-full'>
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <img src={education.icon} alt="Education Icon" className="w-8 h-8" />
+                <h2 className="text-2xl font-bold">{education.title}</h2>
+              </div>
+              <p className="text-lg mb-4">{education.Description}</p>
+              <ScrollArea className="h-[400px]">
+                <div className="space-y-6">
+                  {education.items.map((item, index) => (
+                    <div key={index} className="border p-4 rounded-lg">
+                      <h3 className="text-xl font-semibold">{item.institution}</h3>
+                      <p className="text-sm text-gray-500">{item.degree} - {item.duration}</p>
+                    </div>
+                  ))}
+                </div>
+              </ScrollArea>
+            </div>
+          </TabsContent>
+          {/* Skills content */}
+
+          <TabsContent value='skills' className='w-full'>
+            <div>
+              <h2 className="text-2xl font-bold mb-4">{skills.title}</h2>
+              <p className="text-lg mb-6">{skills.description}</p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {skills.sillList.map((skill, index) => (
+                  <TooltipProvider key={index}>
+                    <Tooltip>
+                      <TooltipTrigger className="flex flex-col items-center">
+                        <span className="text-3xl mb-2">{skill.icon}</span>
+                        <span className="text-sm">{skill.name}</span>
+                      </TooltipTrigger>
+                      <TooltipContent>{skill.name}</TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                ))}
+              </div>
+            </div>
+          </TabsContent>
+
+          {/* About Me content */}
+          <TabsContent value='about' className='w-full'>
+            <div>
+              <h2 className="text-2xl font-bold mb-4">{about.title}</h2>
+              <p className="text-lg mb-6">{about.description}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {about.info.map((info, index) => (
+                  <div key={index} className="border p-4 rounded-lg">
+                    <span className="font-semibold">{info.fieldName}:</span> {info.fieldValue}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </TabsContent>
+        </div>
+      </Tabs>
+    </div>
+
+
   </motion.div>;
 }
