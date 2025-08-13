@@ -1,5 +1,4 @@
 'use client';
-import { Description } from '@radix-ui/react-dialog';
 import React from 'react';
 import {
   FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs,
@@ -114,7 +113,8 @@ const skills = {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { delay, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
+import Image from 'next/image';
 export default function Page() {
   return <motion.div
     initial={{ opacity: 0 }}
@@ -136,7 +136,7 @@ export default function Page() {
           <TabsContent value='experience' className='w-full '>
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <img src={experience.icon} alt="Experience Icon" className="w-8 h-8" />
+                <Image src={experience.icon} alt="Experience Icon" className="w-8 h-8" />
                 <h2 className="text-2xl font-bold ">{experience.title}</h2>
               </div>
               <p className="text-lg mb-4">{experience.description}</p>
@@ -161,7 +161,7 @@ export default function Page() {
           <TabsContent value='education' className='w-full'>
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <img src={education.icon} alt="Education Icon" className="w-8 h-8" />
+                <Image src={education.icon} alt="Education Icon" className="w-8 h-8" />
                 <h2 className="text-2xl font-bold">{education.title}</h2>
               </div>
               <p className="text-lg mb-4">{education.Description}</p>

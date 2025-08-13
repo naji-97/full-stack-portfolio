@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa'
 
@@ -25,16 +25,16 @@ import { motion } from 'framer-motion'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
-function page() {
-  const [formData, setFormData] = React.useState({    firstname: '',
+function ContactPage() {
+  const [formData, setFormData] = useState({    firstname: '',
     lastname: '',
     email: '',
     phone: '',
     service: '',
     message: ''
   })
-  const [loading, setLoading] = React.useState(false)
-  const [success, setSuccess] = React.useState(false)
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
@@ -72,9 +72,9 @@ function page() {
           <div className='xl:w-[54%] order-2 xl:order-none'>
             <form className='flex flex-col gap-6 p-10 bg[#27272c] rounded-xl'
             onSubmit={handleSubmit}>
-              <h3 className='text-4xl text-accent'>Let's work together</h3>
+              <h3 className='text-4xl text-accent'>Let&apos;s work together</h3>
               <p className='text-white/60'>
-                let's create something amazing together. Fill out the form below to get in touch with me.
+                let&apos;s create something amazing together. Fill out the form below to get in touch with me.
               </p>
               {/* Input */}
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6' >
@@ -132,4 +132,4 @@ function page() {
   )
 }
 
-export default page
+export default ContactPage
