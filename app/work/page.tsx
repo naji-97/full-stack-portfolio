@@ -17,6 +17,40 @@ import WorkdSilderButtons from "@/components/WorkdSilderButtons";
 
 const projects = [
   {
+    num: "04",
+    category: "Fullstack",
+    title: "Inventory Management System",
+    description:
+      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Redux Toolkit" },
+      { name: "Node.js" },
+      { name: "Prisma" },
+      { name: "AWS" }
+    ],
+    image: "/assets/work/inventory-management.jpeg",
+    live: "https://main.d1fuz2wu7nv9rz.amplifyapp.com/dashboard",
+    github: "https://github.com/naji-97/Inventory-Management"
+  },
+  {
+    num: "03",
+    category: "Fullstack",
+    title: "Siinlab AI Training",
+    description:
+      "A full-stack application for training AI models to detect barcodes and objects in images, while also recognizing Moroccan dialects. Built to streamline data labeling and AI learning pipelines.",
+    stack: [
+      { name: "React" },
+      { name: "Nextjs" },
+      { name: "FastAPI" },
+      { name: "Stripe" },
+    ],
+    image: "/assets/work/siinlab.png",
+    live: "https://vox.siinlab.com/projects",
+    github: "https://vox.siinlab.com/projects"
+  },
+  {
     num: "01",
     category: "frontend",
     title: "We Are Developer",
@@ -37,40 +71,8 @@ const projects = [
     live: "https://spacehub.onrender.com/",
     github: "https://github.com/naji-97/sec-space-travels-hub"
   },
-  {
-    num: "03",
-    category: "Fullstack",
-    title: "Siinlab AI Training",
-    description:
-      "A full-stack application for training AI models to detect barcodes and objects in images, while also recognizing Moroccan dialects. Built to streamline data labeling and AI learning pipelines.",
-    stack: [
-      { name: "React" },
-      { name: "Nextjs" },
-      { name: "FastAPI" },
-      { name: "Stripe" },
-    ],
-    image: "/assets/work/siinlab.png",
-    live: "https://vox.siinlab.com/projects",
-    github: "https://vox.siinlab.com/projects"
-  },
-  {
-    num: "04",
-    category: "Fullstack",
-    title: "Inventory Management System",
-    description:
-      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
-    stack: [
-      { name: "Next.js" },
-      { name: "React" },
-      { name: "Redux Toolkit" },
-      { name: "Node.js" },
-      { name: "Prisma" },
-      { name: "AWS" }
-    ],
-    image: "/assets/work/inventory-management.jpeg",
-    live: "https://main.d1fuz2wu7nv9rz.amplifyapp.com/dashboard",
-    github: "https://github.com/naji-97/Inventory-Management"
-  }
+  
+  
 
 ]
 const Work = () => {
