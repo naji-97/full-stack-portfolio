@@ -19,69 +19,59 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnammodi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: ""
+    title: "We Are Developer",
+    description:"The website for the world's leading developer event is designed using modern CSS techniques like CSS Grid, Flexbox, and pseudo-selectors.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, { name: "Github" }, { name: "Webpack" }],
+    image: "/assets/work/project1.png",
+    live: "https://naji-97.github.io/CapstonePrj1-ConferencePage/index.html",
+    github: "https://github.com/naji-97/CapstonePrj1-ConferencePage"
   },
   {
     num: "02",
     category: "frontend",
-    title: "project 2",
+    title: "Space Traveler's Hub",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnammodi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, { name: "React" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: ""
+      "Web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Using React, Redux & REST APIs",
+    stack: [{ name: "React" }, { name: "Redux" }, { name: "Api" }, { name: "Github" }, { name: "Sass" }, { name: "Jest" }],
+    image: "/assets/work/space-travel.png",
+    live: "https://spacehub.onrender.com/",
+    github: "https://github.com/naji-97/sec-space-travels-hub"
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 3",
+    category: "Fullstack",
+    title: "Siinlab AI Training",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnammodi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: ""
+      "A full-stack application for training AI models to detect barcodes and objects in images, while also recognizing Moroccan dialects. Built to streamline data labeling and AI learning pipelines.",
+    stack: [
+      { name: "React" },
+      { name: "Nextjs" },
+      { name: "FastAPI" },
+      { name: "Stripe" },
+    ],
+    image: "/assets/work/siinlab.png",
+    live: "https://vox.siinlab.com/projects",
+    github: "https://vox.siinlab.com/projects"
   },
   {
     num: "04",
-    category: "frontend",
-    title: "project 4",
+    category: "Fullstack",
+    title: "Inventory Management System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnammodi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: ""
-  },
-  {
-    num: "05",
-    category: "frontend",
-    title: "project 5",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnammodi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: ""
-  },
-  {
-    num: "06",
-    category: "frontend",
-    title: "project 6",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnammodi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: ""
-  },
+      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Redux Toolkit" },
+      { name: "Node.js" },
+      { name: "Prisma" },
+      { name: "AWS" }
+    ],
+    image: "/assets/work/inventory-management.jpeg",
+    live: "https://main.d1fuz2wu7nv9rz.amplifyapp.com/dashboard",
+    github: "https://github.com/naji-97/Inventory-Management"
+  }
+
 ]
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -104,10 +94,10 @@ const Work = () => {
             {/* Project description */}
             <p className="text-white/60 ">{project.description} </p>
             {/* Project stack */}
-            <ul className="flex gap-4">
+            <ul className="flex gap-3  ">
               {project.stack.map((item, index) => (
-                <li key={index} className="text-xl text-accent  font-medium">
-                  {item.name} {index < project.stack.length - 1 ? "," : ""}
+                <li key={index} className=" inline text-xl text-accent  font-medium whitespace-nowrap">
+                  {item.name}{index < project.stack.length - 1 ? "," : ""}
                 </li>
               ))}
             </ul>
@@ -163,7 +153,7 @@ const Work = () => {
                     alt={item.title}
                     fill
                     
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 "
+                      className="w-full h-full object-contain group-hover:scale-105 transition-all duration-500 "
                   />
                   </div>
                 </div>

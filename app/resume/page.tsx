@@ -136,7 +136,7 @@ export default function Page() {
           <TabsContent value='experience' className='w-full '>
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <Image src={experience.icon} alt="Experience Icon" className="w-8 h-8" />
+                <Image src={experience.icon} alt="Experience Icon" width={32} height={32} className="w-8 h-8" />
                 <h2 className="text-2xl font-bold ">{experience.title}</h2>
               </div>
               <p className="text-lg mb-4">{experience.description}</p>

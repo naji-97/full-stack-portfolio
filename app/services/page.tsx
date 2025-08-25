@@ -8,27 +8,44 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "Building responsive and dynamic websites using modern technologies.",
-    href: "/services/web-development"
+    description: "Building responsive and dynamic websites using modern technologies like Next.js, React, and Node.js.",
+    href: "/work"
   },
   {
     num: "02",
-    title: "Mobile App Development",
-    description: "Creating user-friendly mobile applications for iOS and Android platforms.",
-    href: "/services/mobile-app-development"
+    title: "API Integration",
+    description: "Connecting websites to external services and APIs to enable seamless functionality and data exchange.",
+    href: "/work"
   },
   {
     num: "03",
-    title: "UI/UX Design",
-    description: "Designing intuitive and engaging user interfaces and experiences.",
-    href: "/services/ui-ux-design"
+    title: "E-Commerce Solutions",
+    description: "Developing online stores with product management, shopping carts, and payment integrations.",
+    href: "/work"
   },
   {
     num: "04",
     title: "SEO Optimization",
     description: "Improving website visibility and ranking on search engines.",
-    href: "/services/seo-optimization"
+    href: "/work"
   },
+  {
+    num: "05",
+    title: "Deployment & Hosting",
+    description: "Launching websites on platforms like AWS, Vercel, and Netlify with proper configuration and CI / CD setup.",
+    href: "/work"
+  },
+  {
+    num: "06",
+    title: "Content Management Systems(CMS)",
+    description: "Implementing and customizing platforms like WordPress, Strapi, or Sanity for easy content management.",
+    href: "/work"
+  },
+  
+
+
+
+
 ]
 function page() {
   return (
