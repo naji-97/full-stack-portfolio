@@ -17,7 +17,7 @@ import WorkdSilderButtons from "@/components/WorkdSilderButtons";
 
 const projects = [
   {
-    num: "04",
+    num: "01",
     category: "Fullstack",
     title: "Inventory Management System",
     description:
@@ -35,7 +35,7 @@ const projects = [
     github: "https://github.com/naji-97/Inventory-Management"
   },
   {
-    num: "03",
+    num: "02",
     category: "Fullstack",
     title: "Siinlab AI Training",
     description:
@@ -51,7 +51,7 @@ const projects = [
     github: "https://vox.siinlab.com/projects"
   },
   {
-    num: "01",
+    num: "03",
     category: "frontend",
     title: "We Are Developer",
     description:"The website for the world's leading developer event is designed using modern CSS techniques like CSS Grid, Flexbox, and pseudo-selectors.",
@@ -61,7 +61,7 @@ const projects = [
     github: "https://github.com/naji-97/CapstonePrj1-ConferencePage"
   },
   {
-    num: "02",
+    num: "04",
     category: "frontend",
     title: "Space Traveler's Hub",
     description:
