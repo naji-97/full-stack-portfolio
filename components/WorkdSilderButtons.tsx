@@ -1,6 +1,7 @@
 import React from 'react'
 import {useSwiper } from 'swiper/react';
 import { PiCaretLeftBold, PiCaretRightBold  } from "react-icons/pi";
+import { Swiper, SwiperEvents } from 'swiper/types';
 
 interface Props {
     containerStyles: string;
@@ -9,7 +10,7 @@ interface Props {
 }
 const WorkdSilderButtons = ({ containerStyles, btnSyles, iconsStyles }: Props) => {
     const swiper = useSwiper();
-    const handlePrevSlide = (swiper: any) => {
+    const handlePrevSlide = (swiper: Swiper) => {
 
         if(swiper.activeIndex === 0){
             swiper.slideTo(swiper.slides.length - 1); // Go to the last slide
@@ -18,7 +19,7 @@ const WorkdSilderButtons = ({ containerStyles, btnSyles, iconsStyles }: Props) =
         }
 
     }
-    const handleNextSlide = (swiper: any) => {
+    const handleNextSlide = (swiper: Swiper) => {
 
         if(swiper.activeIndex === swiper.slides.length - 1){
             swiper.slideTo(0); // Go to the first slide
