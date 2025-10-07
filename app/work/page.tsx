@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
+import "swiper/css" 
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
@@ -16,26 +16,44 @@ import Image from "next/image";
 import WorkdSilderButtons from "@/components/WorkdSilderButtons";
 
 const projects = [
+  // {
+  //   num: "00",
+  //   category: "Fullstack",
+  //   title: "Project Management System",
+  //   description:
+  //     "A full‑stack Project Management Dashboard built with Next.js, Node.js, and AWS Services. This application helps teams organize, track, and collaborate on projects more efficiently ",
+  //   stack: [
+  //     { name: "Next.js" },
+  //     { name: "React" },
+  //     { name: "Material UI" },
+  //     { name: "Tailwind CSS" },
+  //     { name: "Redux Toolkit" },
+  //     { name: "Node.js" },
+  //     { name: "Prisma" },
+  //     { name: "AWS" },
+  //     { name: "Cognito" }
+  //   ],
+  //   image: "/assets/work/project-management.jpeg",
+  //   live: "https://main.d2rkgcgqjm6o35.amplifyapp.com",
+  //   github: "https://github.com/naji-97/project-managment"
+  // }, 
   {
     num: "01",
     category: "Fullstack",
-    title: "Project Management System",
+    title: "Inventory Management System",
     description:
-      "A full‑stack Project Management Dashboard built with Next.js, Node.js, and AWS Services. This application helps teams organize, track, and collaborate on projects more efficiently ",
+      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
     stack: [
       { name: "Next.js" },
       { name: "React" },
-      { name: "Material UI" },
-      { name: "Tailwind CSS" },
       { name: "Redux Toolkit" },
       { name: "Node.js" },
       { name: "Prisma" },
-      { name: "AWS" },
-      { name: "Cognito" }
+      { name: "AWS" }
     ],
-    image: "/assets/work/project-management.jpeg",
-    live: "https://main.d2rkgcgqjm6o35.amplifyapp.com",
-    github: "https://github.com/naji-97/project-managment"
+    image: "/assets/work/inventory-management.jpeg",
+    live: "https://inventory-management-nine-indol.vercel.app",
+    github: "https://github.com/naji-97/Inventory-Management"
   },
   {
     num: "02",
