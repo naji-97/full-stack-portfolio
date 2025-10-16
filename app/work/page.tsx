@@ -16,29 +16,29 @@ import Image from "next/image";
 import WorkdSilderButtons from "@/components/WorkdSilderButtons";
 
 const projects = [
-  // {
-  //   num: "00",
-  //   category: "Fullstack",
-  //   title: "Project Management System",
-  //   description:
-  //     "A full‑stack Project Management Dashboard built with Next.js, Node.js, and AWS Services. This application helps teams organize, track, and collaborate on projects more efficiently ",
-  //   stack: [
-  //     { name: "Next.js" },
-  //     { name: "React" },
-  //     { name: "Material UI" },
-  //     { name: "Tailwind CSS" },
-  //     { name: "Redux Toolkit" },
-  //     { name: "Node.js" },
-  //     { name: "Prisma" },
-  //     { name: "AWS" },
-  //     { name: "Cognito" }
-  //   ],
-  //   image: "/assets/work/project-management.jpeg",
-  //   live: "https://main.d2rkgcgqjm6o35.amplifyapp.com",
-  //   github: "https://github.com/naji-97/project-managment"
-  // }, 
   {
     num: "01",
+    category: "Fullstack",
+    title: "Project Management System",
+    description:
+      "A full‑stack Project Management Dashboard built with Next.js, Node.js, and AWS Services. This application helps teams organize, track, and collaborate on projects more efficiently ",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Material UI" },
+      { name: "Tailwind CSS" },
+      { name: "Redux Toolkit" },
+      { name: "Node.js" },
+      { name: "Prisma" },
+      { name: "AWS" },
+      { name: "Cognito" }
+    ],
+    image: "/assets/work/project-management.jpeg",
+    live: "https://project-managment-lilac.vercel.app",
+    github: "https://github.com/naji-97/project-managment"
+  }, 
+  {
+    num: "02",
     category: "Fullstack",
     title: "Inventory Management System",
     description:
@@ -56,7 +56,7 @@ const projects = [
     github: "https://github.com/naji-97/Inventory-Management"
   },
   {
-    num: "02",
+    num: "03",
     category: "Fullstack",
     title: "Siinlab AI Training",
     description:
@@ -72,7 +72,7 @@ const projects = [
     github: "https://vox.siinlab.com/projects"
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "We Are Developer",
     description: "The website for the world's leading developer event is designed using modern CSS techniques like CSS Grid, Flexbox, and pseudo-selectors.",
@@ -82,7 +82,7 @@ const projects = [
     github: "https://github.com/naji-97/CapstonePrj1-ConferencePage"
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Space Traveler's Hub",
     description:
