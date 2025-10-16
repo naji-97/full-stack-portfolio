@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
+import "swiper/css" 
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
@@ -34,11 +34,29 @@ const projects = [
       { name: "Cognito" }
     ],
     image: "/assets/work/project-management.jpeg",
-    live: "https://main.d2rkgcgqjm6o35.amplifyapp.com",
+    live: "https://project-managment-lilac.vercel.app",
     github: "https://github.com/naji-97/project-managment"
-  },
+  }, 
   {
     num: "02",
+    category: "Fullstack",
+    title: "Inventory Management System",
+    description:
+      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Redux Toolkit" },
+      { name: "Node.js" },
+      { name: "Prisma" },
+      { name: "AWS" }
+    ],
+    image: "/assets/work/inventory-management.jpeg",
+    live: "https://inventory-management-nine-indol.vercel.app",
+    github: "https://github.com/naji-97/Inventory-Management"
+  },
+  {
+    num: "03",
     category: "Fullstack",
     title: "Siinlab AI Training",
     description:
@@ -54,7 +72,7 @@ const projects = [
     github: "https://vox.siinlab.com/projects"
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "We Are Developer",
     description: "The website for the world's leading developer event is designed using modern CSS techniques like CSS Grid, Flexbox, and pseudo-selectors.",
@@ -64,7 +82,7 @@ const projects = [
     github: "https://github.com/naji-97/CapstonePrj1-ConferencePage"
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Space Traveler's Hub",
     description:
