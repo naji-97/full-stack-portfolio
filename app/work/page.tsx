@@ -19,6 +19,24 @@ const projects = [
   {
     num: "01",
     category: "Fullstack",
+    title: "Inventory Management System",
+    description:
+      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Redux Toolkit" },
+      { name: "Node.js" },
+      { name: "Prisma" },
+      { name: "AWS" }
+    ],
+    image: "/assets/work/inventory-management.jpeg",
+    live: "https://inventory-management-nine-indol.vercel.app",
+    github: "https://github.com/naji-97/Inventory-Management"
+  },
+  {
+    num: "02",
+    category: "Fullstack",
     title: "Project Management System",
     description:
       "A full‑stack Project Management Dashboard built with Next.js, Node.js, and AWS Services. This application helps teams organize, track, and collaborate on projects more efficiently ",
@@ -37,24 +55,7 @@ const projects = [
     live: "https://project-managment-lilac.vercel.app",
     github: "https://github.com/naji-97/project-managment"
   }, 
-  {
-    num: "02",
-    category: "Fullstack",
-    title: "Inventory Management System",
-    description:
-      "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
-    stack: [
-      { name: "Next.js" },
-      { name: "React" },
-      { name: "Redux Toolkit" },
-      { name: "Node.js" },
-      { name: "Prisma" },
-      { name: "AWS" }
-    ],
-    image: "/assets/work/inventory-management.jpeg",
-    live: "https://inventory-management-nine-indol.vercel.app",
-    github: "https://github.com/naji-97/Inventory-Management"
-  },
+ 
   {
     num: "03",
     category: "Fullstack",
