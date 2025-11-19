@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow, all"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "interest-cohort=()"
+        }
+      ]
+    }
+  ]
+}
