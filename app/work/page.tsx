@@ -21,9 +21,9 @@ const projects = [
     category: "Fullstack",
     title: "MarketPulse AI – A Real-Time Stock Analytics Platform",
     description:
-      "A sophisticated full-stack stock analytics platform featuring real-time price streaming, AI-powered insights, interactive charts, and personalized alerts. Built with Next.js 14, Better Auth for secure authentication, and Inngest for automated background workflows including email notifications and daily news digests.",
+      "A sophisticated full-stack stock analytics platform featuring real-time price streaming, AI-powered insights, interactive charts, and personalized alerts. Built with Next.js 15, Better Auth for secure authentication, and Inngest for automated background workflows including email notifications and daily news digests.",
     stack: [
-      { name: "Next.js 14" },
+      { name: "Next.js 15" },
       { name: "TypeScript" },
       { name: "Tailwind CSS" },
       { name: "Better Auth" },
