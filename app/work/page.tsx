@@ -19,6 +19,26 @@ const projects = [
   {
     num: "01",
     category: "Fullstack",
+    title: "MarketPulse AI – A Real-Time Stock Analytics Platform",
+    description:
+      "A sophisticated full-stack stock analytics platform featuring real-time price streaming, AI-powered insights, interactive charts, and personalized alerts. Built with Next.js 14, Better Auth for secure authentication, and Inngest for automated background workflows including email notifications and daily news digests.",
+    stack: [
+      { name: "Next.js 14" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Better Auth" },
+      { name: "Inngest" },
+      { name: "OpenAI API" },
+      { name: "Real-time APIs" },
+      { name: "Vercel" }
+    ],
+    image: "/assets/work/marketpulse-ai.png", // You'll need to add this image
+    live: "https://stock-market-app-eight.vercel.app", // Add your live URL
+    github: "https://github.com/naji-97/stock-market-app" // Add your GitHub URL
+  },
+  {
+    num: "02",
+    category: "Fullstack",
     title: "Inventory Management System",
     description:
       "A full-stack inventory management dashboard using Next.js, Redux Toolkit, Node.js, and AWS. Features include product management, data visualization, and seamless API integration with a PostgreSQL database.",
@@ -35,7 +55,7 @@ const projects = [
     github: "https://github.com/naji-97/Inventory-Management"
   },
   {
-    num: "02",
+    num: "03",
     category: "Fullstack",
     title: "Project Management System",
     description:
@@ -57,7 +77,7 @@ const projects = [
   }, 
  
   {
-    num: "03",
+    num: "04",
     category: "Fullstack",
     title: "Siinlab AI Training",
     description:
@@ -73,7 +93,7 @@ const projects = [
     github: "https://vox.siinlab.com/projects"
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "We Are Developer",
     description: "The website for the world's leading developer event is designed using modern CSS techniques like CSS Grid, Flexbox, and pseudo-selectors.",
@@ -83,7 +103,7 @@ const projects = [
     github: "https://github.com/naji-97/CapstonePrj1-ConferencePage"
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Space Traveler's Hub",
     description:
